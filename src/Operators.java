@@ -55,6 +55,11 @@ package PACKAGE_NAME;public class Operators {
         boolean dry = true;
         System.out.println("I will go outside" + (sun && dry));
 
+        //Logical OR - ||
+        boolean sale = false;
+        boolean rich = true;
+
+        System.out.println("I will by iPhone" + (sale||rich));
 
 
 
