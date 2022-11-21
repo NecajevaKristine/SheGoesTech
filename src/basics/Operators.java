@@ -1,4 +1,4 @@
-package PACKAGE_NAME;public class Operators {
+package basics;public class Operators {
     public static void main(String[] args) {
 
         //AssignmentOperators =,+=, -=, *=, /=

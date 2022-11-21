@@ -1,3 +1,5 @@
+package basics;
+
 import java.sql.SQLOutput;
 
 public class DataTypes {
