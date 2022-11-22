@@ -23,6 +23,9 @@ public class HW4 {
         if (number1 > 0 && number2 > 0) {
             System.out.println("True");
 
+        } else if (number1 < 0 && number2 <0) {
+            System.out.println("True");
+
         } else {
             System.out.println("False");
         }
