@@ -13,7 +13,7 @@ public class HW3 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a grade1");
+        /*System.out.println("Enter a grade1");
         int grade1 =scanner.nextInt();
 
         System.out.println("Enter a grade2");
@@ -26,7 +26,11 @@ public class HW3 {
             System.out.println("False");
         }
 
-        System.out.println("Max " + Math.max(grade1,grade2));
+        System.out.println("Max " + Math.max(grade1,grade2));*/
+
+        System.out.println("Please enter a number");
+        int input = scanner.nextInt();
+        System.out.println(Math.abs (100-input)<=10);
 
 
 
