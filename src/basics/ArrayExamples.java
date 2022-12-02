@@ -26,6 +26,7 @@ public class ArrayExamples {
         //Iterate through all elements in array with for loop
         for (int i = 0; i < dreamCars.length; i++){
             System.out.println(i+1 + "." + dreamCars[i]);
+            //varētu tikai System.out.println(dreamcars[i]); un tad izprinētu tikai mašīnu nosaukumus bez numerācijas
         }
 
         //Same thing but using for-each loop
