@@ -16,7 +16,7 @@ public class HW8 {
         System.out.println("Please enter array elements one by one");
 
         for (int i = 0; i<storagArray.length; i++){
-            System.out.println("Please eneter element number: " + (i+1));
+            System.out.println("Please enter element number: " + (i+1));
             storagArray[i] = scanner.nextInt();
             sum +=storagArray[i];
 

@@ -27,7 +27,7 @@ public class GessNumber {
 
         } while (guess != rand);
 
-        System.out.println("Congratualtions you won!");
+        System.out.println("Congratulations you won!");
 
 
 
