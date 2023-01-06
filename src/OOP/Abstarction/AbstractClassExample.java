@@ -1,4 +1,4 @@
-package Abstarction;
+package OOP.Abstarction;
 
 abstract    class  Animal{
     protected String name;
