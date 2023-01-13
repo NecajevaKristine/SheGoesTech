@@ -9,7 +9,7 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
     private static GroceryList groceryList = new GroceryList();
 
-    public static void main(String[] args) {
+    private static void main(String[] args) {
 
        boolean quit = false;
        int choice = 0;
@@ -95,7 +95,7 @@ public class Main {
 
     }
 
-    public static void printInstructions(){
+    private static void printInstructions(){
         System.out.println("\nPress");
         System.out.println("\t 0 - To print choice options");
         System.out.println("\t 1 - To print the list of grocery items");
@@ -108,12 +108,12 @@ public class Main {
 
     }
 
-    public static void addItem(){
+    private static void addItem(){
         System.out.println("Please enter the grocery item: ");
         groceryList.addGroceryItem(scanner.nextLine());
     }
 
-    public static void modifyItem(){
+    private static void modifyItem(){
         System.out.println("Enter item number");
         int itemNo = scanner.nextInt();
         scanner.nextLine();
@@ -122,13 +122,13 @@ public class Main {
         groceryList.modifyGroceryItem(itemNo-1, newItem);
     }
 
-    public static void removeItem(){
+    private static void removeItem(){
         System.out.println("Enter item name: ");
         groceryList.removeGroceryItem(scanner.nextLine());
 
     }
 
-    public static void searchItem(){
+    private static void searchItem(){
         System.out.println("Enter item to search for");
         String searchItem = scanner.nextLine();
         if(groceryList.searchItem(searchItem)){
