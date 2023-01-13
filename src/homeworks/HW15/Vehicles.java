@@ -39,10 +39,9 @@ package homeworks.HW15;
         maxDistance (70.0, 7.0, 0,false) ➞ 1000.0*/
 
 public class Vehicles {
-
-    private float fuel;
-    private float fuelUsage;
-    private int passengers;
+    protected float fuel;
+    protected float fuelUsage;
+    protected int passengers;
 
 public Vehicles (float fuel,float fuelUsage,int passengers){
         this.fuel = fuel;
@@ -50,11 +49,11 @@ public Vehicles (float fuel,float fuelUsage,int passengers){
         this.passengers = passengers;
 }
 
-public float maxDistance(){
-    float fuelUsageWithPassengers;
-    return fuelUsageWithPassengers = fuelUsage * (1+ ((5/100) * passengers));
-    //return Math.round((fuel/fuelUsageWithPassengers)*100)/100;
-
+public float maxDistance (float fuel, float fuelUsage, int passengers){
+    return fuel/(fuelUsage *(1+passengers*0.05f))*100;
 }
-
+public float maxDistance(){
+    float fuelUsageWithPassengers = (fuelUsage *(1+(0.05f * passengers)));
+    return Math.round((fuel/fuelUsageWithPassengers)*100);
+}
 }

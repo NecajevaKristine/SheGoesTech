@@ -16,11 +16,9 @@ public class CallingVehicle {
         System.out.println("Please enter number of passengers ");
         int passengers = scanner.nextInt();
 
-
         Vehicles vehicle = new Vehicles(fuel, fuelUsage, passengers);
         float maxDistance = vehicle.maxDistance();
         System.out.println("You can drive " + maxDistance + "km");
-
 
     }
 }
